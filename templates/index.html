@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Guide</title>
+</head>
+<body>
+
+<h1>Travel Guide Recommendation</h1>
+
+<form action="/predict" method="post">
+
+    <label>Interest:</label><br>
+    <select name="interest">
+        <option value="beach">Beach</option>
+        <option value="history">History</option>
+        <option value="nature">Nature</option>
+        <option value="adventure">Adventure</option>
+    </select><br><br>
+
+    <label>Budget:</label><br>
+    <select name="budget">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+    </select><br><br>
+
+    <label>Trip Duration:</label><br>
+    <select name="duration">
+        <option value="short">Short</option>
+        <option value="medium">Medium</option>
+        <option value="long">Long</option>
+    </select><br><br>
+
+    <button type="submit">Recommend Destination</button>
+
+</form>
+
+</body>
+</html>
